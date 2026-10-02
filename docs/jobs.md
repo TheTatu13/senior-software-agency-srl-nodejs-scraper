@@ -7,22 +7,14 @@
 | CIF | 15525700 |
 | Brand | Senior Software |
 | Status | activ |
-| Location | B-dul TUDOR VLADIMIRESCU, 45, Bucureşti Sectorul 5, Bucureşti |
+| Location | MUNICIPIUL BUCUREŞTI, SECTOR 5, BLD. TUDOR VLADIMIRESCU, NR.45, ETAJ 1-2, NUMARUL CADASTRAL 200670-C1 |
 | Website | [https://seniorsoftware.ro](https://seniorsoftware.ro) |
 | Careers | [https://seniorsoftware.ro/cariere/](https://seniorsoftware.ro/cariere/) |
-| Last Scraped | 2026-07-26 |
+| Last Scraped | 2026-10-02 |
 
-## Current Job Listings (5)
+## Current Job Listings (4)
 
-_Generated: 2026-07-26T08:06:41.395Z_
-
-### Sales Account Manager
-
-- **URL:** [https://seniorsoftware.ro/cariere/account-manager](https://seniorsoftware.ro/cariere/account-manager)
-- **Work Mode:** on-site
-- **Location:** București
-- **Tags:** vanzari, full-time
-- **Status:** scraped
+_Generated: 2026-10-02T23:35:10.588Z_
 
 ### Job Laravel Web Developer
 
