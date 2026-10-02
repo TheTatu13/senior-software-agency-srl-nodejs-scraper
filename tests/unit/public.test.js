@@ -1,7 +1,7 @@
 import { jest } from '@jest/globals';
 
 describe('Repository Visibility', () => {
-  const REPO = process.env.GITHUB_REPOSITORY || 'sebiboga/senior-software-agency-srl-nodejs-scraper';
+  const REPO = process.env.GITHUB_REPOSITORY || 'TheTatu13/senior-software-agency-srl-nodejs-scraper';
 
   it('must be PUBLIC (not private)', async () => {
     if (!process.env.GITHUB_REPOSITORY) {
