@@ -1,4 +1,4 @@
-import fetch from "node-fetch";
+import { fetchWithRetry as fetch, assertCanary } from "./src/premium.js";
 import fs from "fs";
 import { fileURLToPath } from "url";
 import { validateAndGetCompany } from "./company.js";
@@ -218,6 +218,7 @@ async function main() {
     const html = await fetchPage();
     const rawJobs = parseJobsFromHTML(html);
     const scrapedCount = rawJobs.length;
+    assertCanary({ scraped: scrapedCount, existing: existingCount, source: "careers site" });
     console.log(`Jobs scraped from Senior Software: ${scrapedCount}`);
 
     const anofmJobs = await searchANOFM(localCif);

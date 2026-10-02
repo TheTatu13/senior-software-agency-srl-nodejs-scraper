@@ -1,4 +1,4 @@
-import fetch from "node-fetch";
+import { fetchWithRetry as fetch, isDryRun } from "./src/premium.js";
 import fs from "fs";
 import { loadEnvFile } from "node:process";
 
@@ -59,6 +59,7 @@ export async function queryCompanySOLR(query) {
 }
 
 export async function deleteJobsByCIF(cif) {
+  if (isDryRun()) { console.log('[dry-run] deleteJobsByCIF skipped'); return; }
   const auth = getSolrAuth();
   if (!auth) throw new Error("SOLR_AUTH not set");
   const body = JSON.stringify({ delete: { query: `cif:${cif}` } });
@@ -79,6 +80,7 @@ export async function deleteJobsByCIF(cif) {
 }
 
 export async function deleteJobByUrl(url) {
+  if (isDryRun()) { console.log('[dry-run] deleteJobByUrl skipped'); return; }
   const auth = getSolrAuth();
   if (!auth) throw new Error("SOLR_AUTH not set");
   const body = JSON.stringify({ delete: { query: `url:"${url}"` } });
@@ -96,6 +98,7 @@ export async function deleteJobByUrl(url) {
 }
 
 export async function upsertJobs(jobs) {
+  if (isDryRun()) { console.log('[dry-run] upsertJobs skipped'); return; }
   const auth = getSolrAuth();
   if (!auth) throw new Error("SOLR_AUTH not set");
   const body = JSON.stringify(jobs);
@@ -119,6 +122,7 @@ export async function upsertJobs(jobs) {
 }
 
 export async function upsertCompany(companyData) {
+  if (isDryRun()) { console.log('[dry-run] upsertCompany skipped'); return; }
   const auth = getSolrAuth();
   if (!auth) throw new Error("SOLR_AUTH not set");
   const body = JSON.stringify([{ ...companyData, id: companyData.id }]);
