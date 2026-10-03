@@ -101,7 +101,7 @@ export async function upsertJobs(jobs) {
   if (isDryRun()) { console.log('[dry-run] upsertJobs skipped'); return; }
   const auth = getSolrAuth();
   if (!auth) throw new Error("SOLR_AUTH not set");
-  const body = JSON.stringify(jobs);
+  const body = JSON.stringify(jobs.map(({ _version_, ...doc }) => doc));
   const params = new URLSearchParams({ commit: "true", overwrite: "true", wt: "json" });
   const res = await fetch(`${SOLR_UPDATE_URL}?${params}`, {
     method: "POST",
