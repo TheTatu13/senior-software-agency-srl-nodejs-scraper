@@ -1,17 +1,17 @@
 # job_seeker_ro_spider — Senior Software Agency SRL Scraper
 
-[![Oportunitati SI Cariere](https://github.com/TheTatu13/senior-software-agency-srl-nodejs-scraper/actions/workflows/job-seeker-ro-spider.yml/badge.svg)](https://github.com/TheTatu13/senior-software-agency-srl-nodejs-scraper/actions/workflows/job-seeker-ro-spider.yml)
-[![Automation Tests](https://github.com/TheTatu13/senior-software-agency-srl-nodejs-scraper/actions/workflows/automation-testing.yml/badge.svg)](https://github.com/TheTatu13/senior-software-agency-srl-nodejs-scraper/actions/workflows/automation-testing.yml)
+[![Oportunitati SI Cariere](https://github.com/peviitor-scrapers/senior-software-agency-srl-nodejs-scraper/actions/workflows/job-seeker-ro-spider.yml/badge.svg)](https://github.com/peviitor-scrapers/senior-software-agency-srl-nodejs-scraper/actions/workflows/job-seeker-ro-spider.yml)
+[![Automation Tests](https://github.com/peviitor-scrapers/senior-software-agency-srl-nodejs-scraper/actions/workflows/automation-testing.yml/badge.svg)](https://github.com/peviitor-scrapers/senior-software-agency-srl-nodejs-scraper/actions/workflows/automation-testing.yml)
 
-[![Version](https://img.shields.io/github/package-json/v/TheTatu13/senior-software-agency-srl-nodejs-scraper?label=version&color=blue)](CHANGELOG.md)
-[![Test Results](https://img.shields.io/badge/test--results-HTML-9b59b6)](https://thetatu13.github.io/senior-software-agency-srl-nodejs-scraper/test-results/)
+[![Version](https://img.shields.io/github/package-json/v/peviitor-scrapers/senior-software-agency-srl-nodejs-scraper?label=version&color=blue)](CHANGELOG.md)
+[![Test Results](https://img.shields.io/badge/test--results-HTML-9b59b6)](https://peviitor-scrapers.github.io/senior-software-agency-srl-nodejs-scraper/test-results/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![JavaScript](https://img.shields.io/badge/javascript-ESM-F7DF1E?logo=javascript&logoColor=black)](https://ecma-international.org/)
 [![Node.js](https://img.shields.io/badge/node-24-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org/)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fpeviitor.ro&label=peviitor.ro)](https://peviitor.ro)
 [![API](https://img.shields.io/website?url=https%3A%2F%2Fapi.peviitor.ro%2F&label=api.peviitor.ro)](https://api.peviitor.ro/)
 [![SOLR](https://img.shields.io/website?url=https%3A%2F%2Fsolr.peviitor.ro%2Fsolr%2F&label=solr.peviitor.ro)](https://solr.peviitor.ro/solr/)
-[![GitHub Pages](https://img.shields.io/github/deployments/TheTatu13/senior-software-agency-srl-nodejs-scraper/github-pages?label=GitHub%20Pages)](https://thetatu13.github.io/senior-software-agency-srl-nodejs-scraper/)
+[![GitHub Pages](https://img.shields.io/github/deployments/peviitor-scrapers/senior-software-agency-srl-nodejs-scraper/github-pages?label=GitHub%20Pages)](https://peviitor-scrapers.github.io/senior-software-agency-srl-nodejs-scraper/)
 
 **job_seeker_ro_spider** — un scraper pentru job-urile Senior Software din România. Extrage anunțurile de pe pagina de cariere și le publică în [peviitor.ro](https://peviitor.ro) prin API-ul SOLR.
 
@@ -98,8 +98,8 @@ The `job-seeker-ro-spider.yml` workflow runs daily at 6 AM UTC via GitHub Action
 4. Updates Solr with new/removed jobs
 5. Runs post-scrape tests (e2e)
 6. Uploads test results and job data as artifacts
-7. Generates [`docs/jobs.md`](https://thetatu13.github.io/senior-software-agency-srl-nodejs-scraper/jobs.md) with company info and all scraped jobs
-8. Pushes test reports and `docs/jobs.md` to [`docs/`](https://thetatu13.github.io/senior-software-agency-srl-nodejs-scraper/)
+7. Generates [`docs/jobs.md`](https://peviitor-scrapers.github.io/senior-software-agency-srl-nodejs-scraper/jobs.md) with company info and all scraped jobs
+8. Pushes test reports and `docs/jobs.md` to [`docs/`](https://peviitor-scrapers.github.io/senior-software-agency-srl-nodejs-scraper/)
 
 ### Test Automation
 
@@ -107,7 +107,7 @@ The `automation-testing.yml` workflow runs on every push and pull request. It:
 1. Ensures Senior Software exists in the company core
 2. Runs unit, integration, and e2e tests
 3. Validates data integrity in Solr
-4. Pushes test reports to [`docs/test-results/`](https://thetatu13.github.io/senior-software-agency-srl-nodejs-scraper/test-results/)
+4. Pushes test reports to [`docs/test-results/`](https://peviitor-scrapers.github.io/senior-software-agency-srl-nodejs-scraper/test-results/)
 
 ## Source
 

@@ -27,6 +27,6 @@
   "website": ["https://seniorsoftware.ro"],
   "career": ["https://seniorsoftware.ro/cariere/"],
   "lastScraped": "2026-06-06",
-  "scraperFile": "https://raw.githubusercontent.com/sebiboga/senior-software-agency-srl-nodejs-scraper/main/.github/workflows/scrape.yml"
+  "scraperFile": "https://raw.githubusercontent.com/peviitor-scrapers/senior-software-agency-srl-nodejs-scraper/main/.github/workflows/scrape.yml"
 }
 ```

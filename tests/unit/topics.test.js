@@ -3,7 +3,7 @@ import { jest } from '@jest/globals';
 const REQUIRED_TOPICS = ['job-seeker-ro-spider', 'peviitor-ro'];
 
 describe('Repository Topics', () => {
-  const REPO = process.env.GITHUB_REPOSITORY || 'TheTatu13/senior-software-agency-srl-nodejs-scraper';
+  const REPO = process.env.GITHUB_REPOSITORY || 'peviitor-scrapers/senior-software-agency-srl-nodejs-scraper';
 
   it('must have EXACTLY the 2 required topics', async () => {
     if (!process.env.GITHUB_REPOSITORY) {

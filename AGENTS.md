@@ -11,7 +11,7 @@ When polling a workflow run with `until [ "$(gh run view ID --json status -q .st
 
 **Always specify the repo explicitly:**
 ```bash
-gh run view <RUN_ID> --repo sebiboga/senior-software-agency-srl-nodejs-scraper --json status -q .status
+gh run view <RUN_ID> --repo peviitor-scrapers/senior-software-agency-srl-nodejs-scraper --json status -q .status
 ```
 
 ### 1. Temporary Files
