@@ -2,6 +2,8 @@ import { jest } from '@jest/globals';
 import { itIfSolr } from '../helpers/itIfSolr.js';
 import * as anaf from '../../src/anaf.js';
 
+jest.retryTimes(2, { logErrorsBeforeRetry: true }); // live third-party ANAF/search calls are occasionally slow in CI
+
 const TEST_CIF = '15525700';
 const TEST_BRAND = 'Senior Software';
 const CAREERS_URL = 'https://seniorsoftware.ro/cariere/';
