@@ -120,7 +120,7 @@ describe('E2E: Full Scraping Pipeline', () => {
 
   describe('SOLR Data Verification', () => {
     itIfSolr('should have Senior Software company core entry', async () => {
-      const result = await solr.queryCompanySOLR(`id:${TEST_CIF}`);
+      const result = await solr.getCompanyByCif(TEST_CIF);
       expect(result.numFound).toBeGreaterThanOrEqual(0);
     }, 15000);
   });

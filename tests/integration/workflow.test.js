@@ -53,7 +53,7 @@ describe('Integration: API Workflow', () => {
     }, 15000);
 
     itIfSolr('should have matching CIF in company core', async () => {
-      const result = await solr.queryCompanySOLR(`id:${TEST_CIF}`);
+      const result = await solr.getCompanyByCif(TEST_CIF);
       expect(result.numFound).toBeGreaterThanOrEqual(0);
     }, 15000);
   });
